@@ -1,0 +1,53 @@
+.user-homepage {
+    display: flex;
+    height: 100vh;
+    background-color: #121212; /* Dark background */
+    color: white;
+    overflow: hidden; /* Prevent scrolling of the main container */
+}
+
+.navbar {
+    position: fixed; /* Fixes the navbar on the left */
+    top: 50px; /* Ensure this is below the top navbar */
+    left: 0;
+    background-color: #000000; /* Semi-transparent background */
+    width: 90px; /* Width of the side navbar */
+    height: calc(100vh - 50px); /* Full height minus top navbar height */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center items horizontally */
+    padding-top: 10px; /* Space at the top */
+    z-index: 10; /* Ensure it is above the content */
+}
+
+.navbar img {
+    width: 24px; /* Set icon size */
+    height: 24px; /* Set icon size */
+    margin: 10px 0; /* Space between icons */
+}
+
+.navbar a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px;
+    margin-top: 60px;
+    transition: background 0.3s;
+}
+
+.navbar a:hover {
+    background-color: #333333;
+}
+
+.content {
+    flex-grow: 1; /* Allow the content area to fill the remaining space */
+    padding: 70px 40px 40px 150px; /* Padding: top, right, bottom, left */
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    overflow-y: auto; /* Allow vertical scrolling if content overflows */
+}
+
+.movie-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Space between movie items */
+}

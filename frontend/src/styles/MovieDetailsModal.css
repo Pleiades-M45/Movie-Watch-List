@@ -1,0 +1,105 @@
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: #121212;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 70vw;
+    max-height: 80%;
+    overflow-y: auto;
+    position: relative;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+.modal-body {
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack elements vertically */
+}
+
+.form-container {
+    display: flex; /* Use flexbox for layout */
+    flex-direction: row; /* Align items in a row */
+    justify-content: space-between; /* Space between form and image previews */
+    min-height: 60vh; /* Set minimum height */
+}
+
+.form-fields {
+    flex: 1; /* Allow form fields to take space */
+    padding-right: 20px; /* Add space between fields and image previews */
+    padding-left: 20px; /* Add space between fields and image previews */
+}
+
+.image-preview {
+    flex: 0 0 250px; /* Fixed width for image preview */
+    display: flex;
+    flex-direction: column; /* Stack images vertically */
+    justify-content: center; /* Center images vertically */
+}
+
+.bg-poster-modal {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.poster-preview,
+.bg-poster-preview {
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.modal-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.modal-buttons button {
+    min-width: 90px;
+    margin: 15px;
+    padding: 10px;
+    background-color: #0e243c;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.modal-buttons button:hover {
+    background-color: #333;
+}
+
+/* Dark themed inputs */
+.form-fields input[type="text"], .form-fields textarea {
+    width: calc(100% - 20px); /* Adjust width to fit within the container */
+    padding: 15px;
+    margin: 15px 0; /* Top and bottom margins */
+    border: 1px solid #0d1134;
+    border-radius: 5px;
+    background-color: #1d1d27;
+    color: #fff;
+}
+
+.modal-body img {
+    max-width: 100%; /* Ensure images fit within their container */
+    margin-top: 10px; /* Margin for image spacing */
+}
