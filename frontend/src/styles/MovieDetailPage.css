@@ -1,0 +1,106 @@
+.movie-detail-homepage {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    height: 100vh; /* Full viewport height */
+    background-color: #000000; /* Dark background */
+    color: white; /* Text color */
+}
+
+.movie-detail-page {
+    flex-grow: 1; /* Take available space */
+    display: flex;
+    flex-direction: column; /* Stack movie header and info vertically */
+    margin-left: 120px; /* Space for left navbar */
+    padding: 20px 0px 0px 20px; /* Add padding for better spacing */
+    overflow-y: auto; /* Allow vertical scrolling */
+}
+
+.movie-header {
+    display: flex; /* Flex container for header */
+    align-items: center; /* Align items in the center */
+    justify-content: space-between; /* Space out title and background image */
+    background-color: #121212; /* Dark background for header */
+    padding: 20px 0px 0px 20px; /* Padding around the header */
+    margin-bottom: 20px; /* Space below header */
+    width: calc(100% - 25px); /* Full width minus left navbar */
+}
+
+.movie-title-container {
+    display: flex; /* Flex container for title */
+    flex-direction: column; /* Stack title and button vertically */
+    margin-right: 20px; /* Space between title container and background image */
+}
+
+.movie-title {
+    font-size: 24px; /* Font size for title */
+    margin: 0; /* No margin for better alignment */
+}
+
+.bg-poster {
+    width: 70vw; /* 75% of the viewport width */
+    height: 60vh; /* 50% of the viewport height */
+    object-fit: cover;
+}
+
+.trailer-button {
+    width: 170px;
+    margin-top: 10px; /* Space above the button */
+    padding: 10px 15px; /* Padding for button */
+    background-color: #1e242b; /* Button background color */
+    color: white; /* Button text color */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners for button */
+    cursor: pointer; /* Pointer on hover */
+}
+
+.movie-info {
+    display: flex; /* Flex container for movie info */
+    margin-top: 20px; /* Space above movie info */
+}
+
+.poster {
+    width: 300px; /* Width for the movie poster */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 50px; /* Space between poster and description */
+}
+
+.title-description {
+    flex-grow: 1; /* Description takes remaining space */
+    margin-top: 20px; /* Space above description */
+    color: #f0f0f0; 
+}
+
+.detail-description {
+    flex-grow: 1; /* Description takes remaining space */
+    margin-top: 10px; /* Space above description */
+    margin-right: 40px; /* Space above description */
+
+    color: #f0f0f0; /* Light color for readability */
+}
+
+.watchlist-button {
+    margin: 15px;
+    padding: 10px;
+    background-color: #0e243c;
+    color: white;
+    border: none;
+    border-radius: 90px;
+    cursor: pointer;
+}
+
+.watchlist-button.added {
+    background-color: #444;
+}
+
+.watchlist-button:hover {
+    background-color: #333;
+}
+
+
+/* Ensure that the entire page can scroll if the content is too tall */
+html, body {
+    height: 100%; /* Full height for the document */
+    margin: 0; /* Remove default margin */
+    overflow: hidden; /* Prevent body overflow */
+}
+

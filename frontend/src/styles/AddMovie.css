@@ -1,0 +1,23 @@
+.add-movie-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px dashed #888;
+    padding: 20px;
+    cursor: pointer;
+    text-align: center;
+    background-color: #121212;
+    color: #fff;
+    transition: 0.3s;
+}
+
+.add-movie-card:hover {
+    border-color: #fff;
+    background-color: #1e1e1e;
+}
+
+.add-icon {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}

@@ -1,0 +1,25 @@
+.movie-card {
+    background-color: #000000;
+    border-radius: 7px;
+    overflow: hidden;
+    width: 270px; /* Fixed width for uniformity */
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer; /* Show pointer cursor */
+}
+
+.movie-card img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s; /* Smooth zoom effect */
+}
+
+.movie-card:hover {
+    transform: scale(1.05); /* Scale effect on hover */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+h4 {
+    color: white;
+    margin: 14px 0;
+}
